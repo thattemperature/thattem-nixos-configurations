@@ -1,0 +1,26 @@
+{
+  "nodes": {
+    "root": {
+      "inputs": {
+        "thattem-options": "thattem-options"
+      }
+    },
+    "thattem-options": {
+      "locked": {
+        "lastModified": 1777018448,
+        "narHash": "sha256-EWQlynvTitLbZZWOsxZfA039cyS20oSo5sdwJvqMMTA=",
+        "owner": "thattemperature",
+        "repo": "thattem-nixos-options",
+        "rev": "f01330bf2f0995b311df52aaf225b7efc6ffe79b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "thattemperature",
+        "repo": "thattem-nixos-options",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
