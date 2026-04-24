@@ -15,9 +15,7 @@
         "wheel"
       ];
       hashedPasswordFile = config.age.secrets.user-password-thattemperature.path;
-      openssh.authorizedKeys.keys = [
-        # TODO: add ssh public keys
-      ];
+      openssh.authorizedKeys.keys = config.private.ssh.trusted-public-keys;
     };
   };
 
