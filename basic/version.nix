@@ -1,6 +1,6 @@
 {
 
   # Do not change this
-  system.stateVersion = "24.11";
+  system.stateVersion = "26.05";
 
 }
