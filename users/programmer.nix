@@ -10,7 +10,7 @@
       description = "Programmer";
       home = "/home/programmer";
       extraGroups = [ "wheel" ];
-      hashedPasswordFile = config.age.secrets.user-password-programmer.path;
+      hashedPasswordFile = config.thattem.secrets.passwords.users.programmer.path;
     };
   };
 

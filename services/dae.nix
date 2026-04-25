@@ -6,7 +6,7 @@
 
     services.dae = {
       enable = true;
-      configFile = config.age.secrets."dae-configuration.dae".path;
+      configFile = config.thattem.secrets.dae-configuration.path;
     };
   };
 

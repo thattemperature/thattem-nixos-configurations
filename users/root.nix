@@ -7,7 +7,7 @@
     users.users.root = {
       uid = 0;
       name = "root";
-      hashedPasswordFile = config.age.secrets.user-password-root.path;
+      hashedPasswordFile = config.thattem.secrets.passwords.users.root.path;
     };
   };
 

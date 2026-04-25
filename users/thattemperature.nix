@@ -14,7 +14,7 @@
         "networkmanager"
         "wheel"
       ];
-      hashedPasswordFile = config.age.secrets.user-password-thattemperature.path;
+      hashedPasswordFile = config.thattem.secrets.passwords.users.thattemperature.path;
       openssh.authorizedKeys.keys = config.thattem.private.ssh.trusted-public-keys;
     };
   };
