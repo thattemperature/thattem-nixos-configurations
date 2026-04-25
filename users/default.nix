@@ -9,7 +9,7 @@
     ./thattemperature.nix
   ];
 
-  config = lib.mkIf config.thattem-nixos.special.enable {
+  config = lib.mkIf config.thattem.nixos.special.enable {
     users.mutableUsers = false;
   };
 

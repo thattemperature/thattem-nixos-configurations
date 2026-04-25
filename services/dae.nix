@@ -2,7 +2,7 @@
 
 {
 
-  config = lib.mkIf config.thattem-nixos.special.enable {
+  config = lib.mkIf config.thattem.nixos.special.enable {
 
     services.dae = {
       enable = true;

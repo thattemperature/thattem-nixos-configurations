@@ -7,7 +7,7 @@
 
 {
 
-  config = lib.mkIf config.thattem-nixos.advanced.enable {
+  config = lib.mkIf config.thattem.nixos.advanced.enable {
 
     services.printing = {
       enable = true;

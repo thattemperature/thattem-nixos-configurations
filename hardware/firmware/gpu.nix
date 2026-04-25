@@ -7,7 +7,7 @@
 
 {
 
-  config = lib.mkIf config.thattem-nixos.hardware.enable (
+  config = lib.mkIf config.thattem.nixos.hardware.enable (
     lib.mkMerge [
 
       {
@@ -22,7 +22,7 @@
         };
       }
 
-      (lib.mkIf (config.private.firmware.gpu == "intel") {
+      (lib.mkIf (config.thattem.private.firmware.gpu == "intel") {
 
         hardware.graphics.extraPackages = with pkgs; [
           intel-media-driver
@@ -34,7 +34,7 @@
 
       })
 
-      (lib.mkIf (config.private.firmware.gpu == "nvidia") {
+      (lib.mkIf (config.thattem.private.firmware.gpu == "nvidia") {
 
         hardware.graphics.extraPackages = with pkgs; [
           nvidia-vaapi-driver

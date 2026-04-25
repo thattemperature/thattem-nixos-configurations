@@ -2,7 +2,7 @@
 
 {
 
-  config = lib.mkIf config.thattem-nixos.special.enable {
+  config = lib.mkIf config.thattem.nixos.special.enable {
 
     users.users.root = {
       uid = 0;

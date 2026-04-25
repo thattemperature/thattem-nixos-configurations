@@ -7,7 +7,7 @@
 
 {
 
-  config = lib.mkIf config.thattem-nixos.display.enable {
+  config = lib.mkIf config.thattem.nixos.display.enable {
 
     fonts = {
       fontDir.enable = true;

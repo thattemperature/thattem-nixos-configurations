@@ -7,12 +7,12 @@
 
 {
 
-  config = lib.mkIf config.thattem-nixos.special.enable {
+  config = lib.mkIf config.thattem.nixos.special.enable {
 
     services.nix-serve = {
       enable = true;
       package = pkgs.nix-serve-ng;
-      secretKeyFile = config.private.nix-serve.secret-key-file;
+      secretKeyFile = config.thattem.private.nix-serve.secret-key-file;
     };
   };
 

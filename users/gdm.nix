@@ -7,7 +7,7 @@
 
 {
 
-  config = lib.mkIf config.thattem-nixos.desktop.enable {
+  config = lib.mkIf config.thattem.nixos.desktop.enable {
 
     # Workaround: set as system-wide package
     environment.systemPackages = with pkgs; [

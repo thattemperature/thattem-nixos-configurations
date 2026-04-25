@@ -2,7 +2,7 @@
 
 {
 
-  config = lib.mkIf config.thattem-nixos.hardware.enable {
+  config = lib.mkIf config.thattem.nixos.hardware.enable {
 
     boot.loader = {
       timeout = 8;

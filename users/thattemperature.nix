@@ -2,7 +2,7 @@
 
 {
 
-  config = lib.mkIf config.thattem-nixos.special.enable {
+  config = lib.mkIf config.thattem.nixos.special.enable {
 
     users.users.thattemperature = {
       isNormalUser = true;
@@ -15,7 +15,7 @@
         "wheel"
       ];
       hashedPasswordFile = config.age.secrets.user-password-thattemperature.path;
-      openssh.authorizedKeys.keys = config.private.ssh.trusted-public-keys;
+      openssh.authorizedKeys.keys = config.thattem.private.ssh.trusted-public-keys;
     };
   };
 

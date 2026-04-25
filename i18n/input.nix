@@ -15,7 +15,7 @@ in
 
 {
 
-  config = lib.mkIf config.thattem-nixos.desktop.enable {
+  config = lib.mkIf config.thattem.nixos.desktop.enable {
 
     i18n.inputMethod = {
       enable = true;

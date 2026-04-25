@@ -3,7 +3,7 @@
 {
 
   networking = {
-    hostName = config.private.hostname;
+    hostName = config.thattem.private.hostname;
     networkmanager.enable = true;
   };
 

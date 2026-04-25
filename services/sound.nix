@@ -2,7 +2,7 @@
 
 {
 
-  config = lib.mkIf config.thattem-nixos.desktop.enable {
+  config = lib.mkIf config.thattem.nixos.desktop.enable {
 
     services = {
       pulseaudio.enable = false;

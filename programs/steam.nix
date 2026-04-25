@@ -2,7 +2,7 @@
 
 {
 
-  config = lib.mkIf config.thattem-nixos.advanced.enable {
+  config = lib.mkIf config.thattem.nixos.advanced.enable {
 
     programs.steam.enable = true;
   };

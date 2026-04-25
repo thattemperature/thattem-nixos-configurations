@@ -10,10 +10,10 @@
       ];
     }
 
-    (lib.mkIf config.thattem-nixos.special.enable {
+    (lib.mkIf config.thattem.nixos.special.enable {
 
       nix.settings = {
-        trusted-public-keys = config.private.nix-serve.trusted-public-keys;
+        trusted-public-keys = config.thattem.private.nix-serve.trusted-public-keys;
       };
     })
   ];
