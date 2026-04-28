@@ -8,10 +8,10 @@
     ./fwupd.nix
     ./nix-serve.nix
     ./printing.nix
-    ./ratbag.nix
     ./sound.nix
     ./ssh.nix
     ./sunshine.nix
+    ./syncthing.nix
     ./tailscale.nix
   ];
 

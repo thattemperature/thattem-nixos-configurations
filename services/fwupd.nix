@@ -1,5 +1,10 @@
+{ config, lib, ... }:
+
 {
 
-  services.fwupd.enable = true;
+  config = lib.mkIf config.thattem.nixos.advanced.enable {
+
+    services.fwupd.enable = true;
+  };
 
 }

@@ -7,11 +7,11 @@
     },
     "thattem-options": {
       "locked": {
-        "lastModified": 1777119074,
-        "narHash": "sha256-J7u/V5hTdAcbhBrR8LPBGtro1PuzfcqstsenfVMORas=",
+        "lastModified": 1777390272,
+        "narHash": "sha256-i4RqHOddV3sapa7zFSbWPMu6apK8dFf7EsxKdWRhW5I=",
         "owner": "thattemperature",
         "repo": "thattem-nixos-options",
-        "rev": "8ed5f3ff23098f998c094f8ca1e409419237fa25",
+        "rev": "b76a8e5481508380d9bd6384b14c4a71221794d4",
         "type": "github"
       },
       "original": {
