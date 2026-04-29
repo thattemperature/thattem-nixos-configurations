@@ -12,4 +12,4 @@
            (:expr "((builtins.getFlake (builtins.toString ./.)).inputs.nixpkgs.lib.nixosSystem { system = \"x86_64-linux\"; modules = [ ]; }).options")
 
            :thattemperature
-           (:expr "((builtins.getFlake (builtins.toString ./.)).inputs.nixpkgs.lib.evalModules { modules = [ (builtins.getFlake (builtins.toString ./.)).inputs.thattem-options.nixosModules.default ]; }).options"))))))))
+           (:expr "((builtins.getFlake (builtins.toString ./.)).inputs.nixpkgs.lib.evalModules { modules = [ (builtins.getFlake (builtins.toString ./.)).inputs.thattem-nixos-options.nixosModules.default ]; }).options"))))))))

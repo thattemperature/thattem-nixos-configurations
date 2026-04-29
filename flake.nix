@@ -4,18 +4,18 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    thattem-options.url = "github:thattemperature/thattem-nixos-options";
+    thattem-nixos-options.url = "github:thattemperature/thattem-nixos-options";
   };
 
   outputs =
-    { self, thattem-options, ... }:
+    { self, thattem-nixos-options, ... }:
 
     {
       nixosModules = {
 
         default = {
           imports = [
-            thattem-options.nixosModules.default
+            thattem-nixos-options.nixosModules.default
           ]
           ++ (
             with self.nixosModules;

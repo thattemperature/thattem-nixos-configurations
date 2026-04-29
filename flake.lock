@@ -19,10 +19,10 @@
     "root": {
       "inputs": {
         "nixpkgs": "nixpkgs",
-        "thattem-options": "thattem-options"
+        "thattem-nixos-options": "thattem-nixos-options"
       }
     },
-    "thattem-options": {
+    "thattem-nixos-options": {
       "locked": {
         "lastModified": 1777390272,
         "narHash": "sha256-i4RqHOddV3sapa7zFSbWPMu6apK8dFf7EsxKdWRhW5I=",
