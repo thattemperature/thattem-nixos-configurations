@@ -2,7 +2,10 @@
 
   description = "Thattemperature's NixOS configurations";
 
-  inputs.thattem-options.url = "github:thattemperature/thattem-nixos-options";
+  inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    thattem-options.url = "github:thattemperature/thattem-nixos-options";
+  };
 
   outputs =
     { self, thattem-options, ... }:
