@@ -2,7 +2,7 @@
   . ((eglot-workspace-configuration
       . (:nixd
          (:nixpkgs
-          (:expr "import (builtins.getFlake (builtins.toString ./.)).inputs.nixpkgs { }")
+          (:expr "import (builtins.getFlake (builtins.toString ./.)).inputs.nixpkgs { overlays = [ (builtins.getFlake (builtins.toString ./.)).inputs.thattem-nixpkgs-overlays.overlays.default ]; }")
 
           :formatting
           (:command [ "nixfmt" ])

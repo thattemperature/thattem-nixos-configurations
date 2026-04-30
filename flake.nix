@@ -4,11 +4,17 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    thattem-nixpkgs-overlays.url = "github:thattemperature/thattem-nixpkgs-overlays";
     thattem-nixos-options.url = "github:thattemperature/thattem-nixos-options";
   };
 
   outputs =
-    { self, thattem-nixos-options, ... }:
+    {
+      self,
+      thattem-nixpkgs-overlays,
+      thattem-nixos-options,
+      ...
+    }:
 
     {
       nixosModules = {
@@ -30,6 +36,9 @@
             ++ services.imports
             ++ users.imports
           );
+          config = {
+            nixpkgs.overlays = [ thattem-nixpkgs-overlays.overlays.default ];
+          };
         };
 
         basic = {

@@ -19,7 +19,8 @@
     "root": {
       "inputs": {
         "nixpkgs": "nixpkgs",
-        "thattem-nixos-options": "thattem-nixos-options"
+        "thattem-nixos-options": "thattem-nixos-options",
+        "thattem-nixpkgs-overlays": "thattem-nixpkgs-overlays"
       }
     },
     "thattem-nixos-options": {
@@ -34,6 +35,21 @@
       "original": {
         "owner": "thattemperature",
         "repo": "thattem-nixos-options",
+        "type": "github"
+      }
+    },
+    "thattem-nixpkgs-overlays": {
+      "locked": {
+        "lastModified": 1777553313,
+        "narHash": "sha256-dGTCWES2LZm+fAjV3FHkLiWIBpypHrdwAoR/2jYDKc0=",
+        "owner": "thattemperature",
+        "repo": "thattem-nixpkgs-overlays",
+        "rev": "e633cdf0e89490f40deeaa1fe6d5181d8ed2ca51",
+        "type": "github"
+      },
+      "original": {
+        "owner": "thattemperature",
+        "repo": "thattem-nixpkgs-overlays",
         "type": "github"
       }
     }
