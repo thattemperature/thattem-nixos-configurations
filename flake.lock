@@ -40,11 +40,11 @@
     },
     "thattem-nixpkgs-overlays": {
       "locked": {
-        "lastModified": 1777553313,
-        "narHash": "sha256-dGTCWES2LZm+fAjV3FHkLiWIBpypHrdwAoR/2jYDKc0=",
+        "lastModified": 1777557906,
+        "narHash": "sha256-nImcmRbvwhGmHykrg/q8A5nnWg88F8hsgEMeOkTE9bg=",
         "owner": "thattemperature",
         "repo": "thattem-nixpkgs-overlays",
-        "rev": "e633cdf0e89490f40deeaa1fe6d5181d8ed2ca51",
+        "rev": "b5d240a486dfaff3db5005d9b51275370631ffae",
         "type": "github"
       },
       "original": {
