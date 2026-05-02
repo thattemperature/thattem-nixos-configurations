@@ -9,7 +9,7 @@
         boot.loader.timeout = 8;
       }
 
-      (lib.mkIf (config.thattem.nixos.type == "common") {
+      (lib.mkIf (config.thattem.private.boot.type == "UEFI") {
 
         boot.loader = {
           systemd-boot.enable = true;
@@ -18,7 +18,7 @@
 
       })
 
-      (lib.mkIf (config.thattem.nixos.type == "server") {
+      (lib.mkIf (config.thattem.private.boot.type == "BIOS") {
 
         boot.loader.grub = {
           enable = true;

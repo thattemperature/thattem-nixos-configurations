@@ -21,8 +21,8 @@
 
       (lib.mkIf config.thattem.nixos.special.enable {
         services.syncthing = {
-          key = config.thattem.private.syncthing.key;
-          cert = config.thattem.private.syncthing.cert;
+          key = config.thattem.secrets.syncthing.key.path;
+          cert = config.thattem.secrets.syncthing.cert.path;
           settings = {
             devices = config.thattem.private.syncthing.devices;
             folders = {
