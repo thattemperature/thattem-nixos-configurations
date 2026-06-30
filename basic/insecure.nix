@@ -6,6 +6,7 @@
     pkg:
     builtins.elem (lib.getName pkg) [
       "ventoy"
+      "pnpm"
     ];
 
 }
