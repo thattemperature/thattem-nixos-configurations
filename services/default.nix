@@ -12,6 +12,7 @@
     ./ssh.nix
     ./sunshine.nix
     ./syncthing.nix
+    ./systemd.nix
     ./tailscale.nix
   ];
 
