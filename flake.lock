@@ -2,11 +2,11 @@
   "nodes": {
     "nixpkgs": {
       "locked": {
-        "lastModified": 1789006805,
-        "narHash": "sha256-xB8mKMOx1IA9vTDNLmJZ6n4wCMq/cuWBBOzGCRnqxrU=",
+        "lastModified": 1791048980,
+        "narHash": "sha256-KgItSKML8Xvte0B7/uGnBDsYzSnnKHcOaiUbgWBXLXw=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "8ce4ef6cb6f871616146b9fe26d2a5ae594e94fe",
+        "rev": "a7868a727837f3c09cee2ce0ca671c76b1589fed",
         "type": "github"
       },
       "original": {
@@ -40,11 +40,11 @@
     },
     "thattem-nixpkgs-overlays": {
       "locked": {
-        "lastModified": 1789009070,
-        "narHash": "sha256-8EiChYPl2fOIvoYH8a9JmxrjrbWGiRMe2zar0jVX1Ao=",
+        "lastModified": 1790237750,
+        "narHash": "sha256-a9q4OJzP0XWTpDCwkLobaklj0rbm4Tf+I+1Nbvl8aJ0=",
         "owner": "thattemperature",
         "repo": "thattem-nixpkgs-overlays",
-        "rev": "cc556a4df193dcc0be95208dfdfe91861104c5d7",
+        "rev": "fc177af8ae0d3f1a780f288a7ee00f0cb4b2c7d6",
         "type": "github"
       },
       "original": {
