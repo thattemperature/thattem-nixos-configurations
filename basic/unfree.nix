@@ -11,6 +11,7 @@
       "qq"
       "wechat"
       "discord"
+      "discord-unwrapped"
 
       "nvidia-x11"
       "nvidia-settings"
