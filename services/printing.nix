@@ -1,9 +1,4 @@
-{
-  config,
-  lib,
-  pkgs,
-  ...
-}:
+{ config, lib, ... }:
 
 {
 
@@ -12,7 +7,6 @@
     services.printing = {
       enable = true;
       browsing = true;
-      drivers = with pkgs; [ hplip ];
     };
   };
 
