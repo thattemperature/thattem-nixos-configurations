@@ -13,7 +13,7 @@
       services.nix-serve = {
         enable = true;
         package = pkgs.nix-serve-ng;
-        secretKeyFile = config.thattem.secrets.nix-serve-key.path;
+        secretKeyFile = config.thattem.secrets.nix-cache-key.path;
       };
     }
   );

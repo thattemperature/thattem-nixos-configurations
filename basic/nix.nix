@@ -14,8 +14,8 @@
     (lib.mkIf config.thattem.nixos.special.enable {
 
       nix.settings = {
-        substituters = config.thattem.private.nix-serve.substituters;
-        trusted-public-keys = config.thattem.private.nix-serve.trusted-public-keys;
+        substituters = config.thattem.private.nix-cache.substituters;
+        trusted-public-keys = config.thattem.private.nix-cache.trusted-public-keys;
 
       };
     })
