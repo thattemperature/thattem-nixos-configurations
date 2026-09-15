@@ -9,12 +9,15 @@
         isNormalUser = true;
         name = "thattemperature";
         description = "That Temperature";
-        extraGroups = [
-          "root"
-          "networkmanager"
-          "wheel"
+        extraGroups = lib.mkMerge [
+          (lib.mkIf (config.thattem.nixos.type == "common") [ "root" ])
+          [
+            "networkmanager"
+            "wheel"
+          ]
         ];
       };
+
     }
 
     (lib.mkIf config.thattem.nixos.special.enable {
