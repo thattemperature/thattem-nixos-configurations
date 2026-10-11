@@ -2,7 +2,6 @@
 
   imports = [
     ./btrfs.nix
-    ./clash-verge.nix
     ./display.nix
     ./fwupd.nix
     ./nix-serve.nix
