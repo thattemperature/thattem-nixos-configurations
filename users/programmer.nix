@@ -10,7 +10,9 @@
           isNormalUser = true;
           name = "programmer";
           description = "Programmer";
-          extraGroups = [ "wheel" ];
+          extraGroups = [
+            config.users.groups.wheel.name
+          ];
         };
       }
 

@@ -10,10 +10,12 @@
         name = "thattemperature";
         description = "That Temperature";
         extraGroups = lib.mkMerge [
-          (lib.mkIf (config.thattem.nixos.type == "common") [ "root" ])
+          (lib.mkIf (config.thattem.nixos.type == "common") [
+            config.users.groups.root.name
+          ])
           [
-            "networkmanager"
-            "wheel"
+            config.users.groups.networkmanager.name
+            config.users.groups.wheel.name
           ]
         ];
       };
