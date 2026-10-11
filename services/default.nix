@@ -1,3 +1,5 @@
+{ config, lib, ... }:
+
 {
 
   imports = [
@@ -10,8 +12,24 @@
     ./ssh.nix
     ./sunshine.nix
     ./syncthing.nix
-    ./systemd.nix
     ./tailscale.nix
+  ];
+
+  config = lib.mkMerge [
+
+    (lib.mkIf config.services.tailscale.enable {
+      systemd.services.tailscaled = lib.mkMerge [
+
+        (lib.mkIf config.programs.clash-verge.enable (
+          lib.mkIf config.programs.clash-verge.serviceMode {
+            after = [ "clash-verge.service" ];
+            wants = [ "clash-verge.service" ];
+          }
+        ))
+
+      ];
+    })
+
   ];
 
 }
