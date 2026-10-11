@@ -1,3 +1,5 @@
+{ config, ... }:
+
 {
 
   services.openssh = {
@@ -6,7 +8,7 @@
       KbdInteractiveAuthentication = false;
       PasswordAuthentication = false;
       PermitRootLogin = "no";
-      AllowUsers = [ "thattemperature" ];
+      AllowUsers = [ config.users.users.thattemperature.name ];
     };
   };
 
