@@ -43,7 +43,7 @@
                 cursor-size = lib.gvariant.mkInt32 32;
                 cursor-theme = "Future-cursors";
                 document-font-name = "Sarasa UI SC 16";
-                font-name = "Sarasa UI SC 16";
+                font-name = "Sarasa Gothic SC 16";
                 monospace-font-name = "Sarasa Mono SC 16";
               };
             };
