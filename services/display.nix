@@ -11,7 +11,14 @@
     lib.mkMerge [
 
       {
-        services.displayManager.gdm.enable = true;
+        services.displayManager.gdm = {
+          enable = true;
+          banner = ''
+            Welcome to thattemperature's computer
+            NixOS ${config.system.nixos.release} ${config.system.nixos.codeName}
+            Have a nice day
+          '';
+        };
 
         users.users = lib.genAttrs' [ null 1 2 3 4 ] (
           i:
