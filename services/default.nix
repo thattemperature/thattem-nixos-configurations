@@ -8,6 +8,7 @@
     ./fwupd.nix
     ./nix-serve.nix
     ./printing.nix
+    ./resolved.nix
     ./sound.nix
     ./ssh.nix
     ./sunshine.nix
