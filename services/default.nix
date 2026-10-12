@@ -3,6 +3,7 @@
 {
 
   imports = [
+    ./avahi.nix
     ./btrfs.nix
     ./display.nix
     ./fwupd.nix
