@@ -10,6 +10,12 @@
         "nix-command"
         "flakes"
       ];
+
+      nix.optimise = {
+        automatic = true;
+        dates = "daily";
+        randomizedDelaySec = "10min";
+      };
     }
 
     (lib.mkIf config.thattem.nixos.special.enable {
