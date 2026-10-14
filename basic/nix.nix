@@ -11,10 +11,18 @@
         "flakes"
       ];
 
-      nix.optimise = {
-        automatic = true;
-        dates = "daily";
-        randomizedDelaySec = "10min";
+      nix = {
+        optimise = {
+          automatic = true;
+          dates = "daily";
+          randomizedDelaySec = "10min";
+        };
+        gc = {
+          automatic = true;
+          dates = "daily";
+          randomizedDelaySec = "10min";
+          options = "--delete-older-than 4d";
+        };
       };
     }
 
