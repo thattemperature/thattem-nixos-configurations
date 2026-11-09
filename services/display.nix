@@ -27,7 +27,7 @@
           in
           lib.nameValuePair "gdm-greeter${suffix}" {
             packages = with pkgs; [
-              future-cursor-theme
+              phinger-cursors
             ];
           }
         );
@@ -41,7 +41,7 @@
               };
               "org/gnome/desktop/interface" = {
                 cursor-size = lib.gvariant.mkInt32 32;
-                cursor-theme = "Future-cursors";
+                cursor-theme = "phinger-cursors-light";
                 document-font-name = "Sarasa UI SC 16";
                 font-name = "Sarasa Gothic SC 16";
                 monospace-font-name = "Sarasa Mono SC 16";
